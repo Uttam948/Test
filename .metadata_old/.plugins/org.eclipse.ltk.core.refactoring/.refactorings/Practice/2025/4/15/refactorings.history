@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;hackerRankTest.Nagarro&apos; to &apos;NagarroTest&apos;&#x0D;&#x0A;- Original project: &apos;Practice&apos;&#x0D;&#x0A;- Original element: &apos;hackerRankTest.Nagarro&apos;&#x0D;&#x0A;- Renamed element: &apos;hackerRankTest.NagarroTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Nagarro&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;hackerRankTest{Nagarro.java[Nagarro" matchStrategy="1" name="NagarroTest" qualified="false" references="true" similarDeclarations="false" stamp="1744476709640" textual="false" version="1.0"/>
+</session>

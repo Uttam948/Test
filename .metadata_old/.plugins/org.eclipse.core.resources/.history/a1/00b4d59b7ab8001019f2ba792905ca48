@@ -1,0 +1,45 @@
+package leetCode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class CombinationSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[] = {2,3,5};
+	//	int arr[] = {2,3,6,7};
+		//int arr[] = {10,1,2,7,6,1,5};
+		//int arr[] = {1,2,7,6,1,5,10};
+		Arrays.sort(arr);
+	//	int arr[] = {1,1,1,2,2};
+		
+		//int target[] = new int[arr.length];
+		int target = 7;
+		//int target = 4;
+		List<Integer> list = new ArrayList<>();
+		
+		recuur(0 , target , list ,  arr);
+			
+	}
+	
+	public static void recuur(int i , int target , List<Integer> list , int arr[]) {
+		if(i == arr.length) {
+			
+			if(target == 0) {
+			System.out.println(list);
+			}
+			return;
+		}
+		if(arr[i] <= target) {
+		list.add(arr[i]);
+		recuur(i+1 , (target - arr[i]) , list , arr);
+		list.remove(list.size() -1 );
+		}
+		recuur(i+1 , target , list , arr);
+		
+	}
+}

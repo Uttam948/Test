@@ -1,0 +1,31 @@
+package practices1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Listarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 List<int [] > list = new ArrayList<>();
+
+		int []arr= new int[] {1, 2, 3, 4, 5};
+
+		int s = 5;
+		
+		 for(int i = 0 ; i<arr.length ; i++){
+
+             for(int j = i+1 ; j < arr.length-1 ; j++){
+
+                 if(arr[i] + arr[j] == s){
+                   
+                      
+                 }
+             }
+         }
+			
+		System.out.println(list);
+	}
+
+}

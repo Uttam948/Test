@@ -1,0 +1,4 @@
+emp_name ,  department_id
+Kishore , 10
+Shiva , 20
+Ashoke , 20

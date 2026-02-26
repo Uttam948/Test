@@ -1,0 +1,38 @@
+package practices1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "aaabbbbccbbff";
+        int k =0;
+		int count ;
+		int a[] = new int[str.length()];
+		
+		for(int i =k ; i<str.length() ; i++) {
+			
+			count = 0;
+			
+			for(int j=0 ; j< str.length() ; j++) {
+				
+				if(str.charAt(i) == str.charAt(j)) {
+					
+					count ++;
+					
+					
+			}
+			
+			a[i] = count;
+			
+			
+			
+		}
+	}
+
+	
+	
+}

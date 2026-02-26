@@ -1,0 +1,19 @@
+package practices1;
+
+import javax.swing.JFrame;
+
+public class MainFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		JFrame mainframe = new JFrame();
+		
+		mainframe.setVisible(true);
+		mainframe.setSize(600,400);
+
+	}
+
+}

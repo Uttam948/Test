@@ -1,0 +1,18 @@
+package NovermberCoding_2025;
+
+public class Feb10 {
+	
+	public static void run(String str) {
+	//	System.out.println("Run Code 1");
+	}
+	
+	public static void run(Object obj) {
+		System.out.println("Run Code 2");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		run(null);
+	}
+
+}

@@ -1,0 +1,27 @@
+package NovermberCoding_2025;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Feb001 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = "./32abdbgs23./.&8s%";
+		String s = "";
+		
+		
+		int n = 16 ;
+		List<Integer> list = new ArrayList<>();
+		while(n > 0) {
+			
+			int m = n % 2;
+			list.add(m);
+			n = n/2;
+			
+		}
+		System.out.println(list);
+	}
+
+}

@@ -1,0 +1,56 @@
+package NovermberCoding_2025;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Employeee{
+	
+	private String emplDept;
+	private String name;
+	private int age;
+	
+	Employeee(String emplDept, String name , int age){
+		this.emplDept = emplDept;
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void getemplDept(String emplDept) {
+		this.emplDept = emplDept;
+	}
+	
+	public void getName(String name) {
+		this.name = name;
+	}
+	
+	public void getAge(int age) {
+		this.age = age;
+	}
+	
+}
+
+public class Feb10 {
+	
+	public static void run(String str) {
+		System.out.println("Run Code 1");
+	}
+	
+	public static void run(Object obj) {
+		System.out.println("Run Code 2");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Employeee> list = new ArrayList<>();
+		
+		list.add(new Employeee("Mech", "Rohan", 2));
+		list.add(new Employeee("Mech", "Rohan", 3));
+		list.add(new Employeee("Mech", "Rohan", 4));
+		list.add(new Employeee("Mech", "Rohan", 5));
+		run(null);
+		
+		
+	}
+
+}

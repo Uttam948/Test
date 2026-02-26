@@ -1,0 +1,45 @@
+package NovermberCoding_2025;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.stream.Collectors;
+
+
+class RideSharingSystem{
+	
+	int arr[] = new int[10];
+	
+	public RideSharingSystem() {
+		
+		
+	}
+	
+	public void addRider(int RiderId) {
+		
+	}
+	
+	public void addDriver(int DriverId) {
+		
+	}
+	
+	public int[] matchDriverWithRider() {
+		
+		
+		
+		return arr;
+	}
+	
+	public void cancelRider(int riderId) {
+		
+	}
+}
+
+public class Feb23 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  
+	  
+	}
+
+}

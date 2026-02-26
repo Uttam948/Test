@@ -1,0 +1,43 @@
+package practices1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<String> list = new ArrayList<>();
+		
+		list.add("Amit");
+		list.add("Uttam");
+		
+
+	}
+	
+	public int add(int a ) {
+		return 1;
+	}
+	
+	public int add() {
+		return 2;
+	}
+
+}
+
+class Rocky
+{
+	  public String username() {
+		  return "Uttam";
+	  }
+}
+
+class Bhai extends Rocky{
+	
+	public String username() {
+		return "Uttam";
+		
+	}
+}
+  

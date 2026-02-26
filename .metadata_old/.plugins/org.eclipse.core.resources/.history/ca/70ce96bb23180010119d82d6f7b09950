@@ -1,0 +1,80 @@
+package leetCode;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+public class LongestPelindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	//	String st = "asddbbabb";  //cbac aabaa // aba
+//	String st = "babad";
+	//	"aacabdkacaa"
+	//	String st ="bacaa";
+	//	String st = "jhddc";
+	//	String st = "aabaa";
+	//	String st = "acaa";
+	//	String st = "bacabab";
+		
+		String st = "aacabdkacaa";
+		
+		int maxcount  =0;
+		int pelindrome =0;
+		int countofj = 0;
+		
+		for(int i =0 ; i<st.length() ; i++) {
+			
+			
+			int j = st.length()-1;
+			int key = i;
+			int count = 0;
+			int val = st.length()-1;
+			
+		//	else if(key>0 && st.charAt(key-1) == st.charAt(j)){
+			
+			while(key < j ) {
+				
+				if(st.charAt(key) == st.charAt(j)) {
+					j--;key++; count++;
+					
+				
+				}else {
+					count = 0;
+					j--;
+				}
+			}
+			if(maxcount <  count ) {
+				
+				
+				maxcount = count;
+				pelindrome = i;
+				countofj = j;
+			}
+			
+		}
+		
+		System.out.println(maxcount+ " "+ pelindrome +" "+countofj );
+		
+		
+		System.out.println(st.substring( pelindrome , countofj+1 + maxcount));
+		
+		if(maxcount % 2 ==0) {
+			//System.out.println(st.substring( pelindrome , countofj + maxcount));
+		}else {
+			//System.out.println(st.substring( pelindrome , pelindrome + maxcount+2));
+		}
+		
+		int v = 1534236469;
+		
+		System.out.println((int)Math.pow(2,31)-1);
+		
+		 if(v < (int)-Math.pow(2,31) && v > (int)Math.pow(2,31)){
+	            System.out.println("yes");
+	}
+	}
+
+}

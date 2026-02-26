@@ -1,0 +1,72 @@
+package NovermberCoding_2025;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.stream.Collectors;
+
+
+class First{
+	
+	int a ;
+	
+	public First(int a) {
+		this.a= a;
+	}
+	
+	public void show() {
+		System.out.println(a);
+	}
+}
+
+class Second extends First{
+
+	public Second(int a) {
+	      super(a);
+		// TODO Auto-generated constructor stub
+	}
+}
+
+
+class RideSharingSystem{
+	
+	int arr[] = new int[10];
+	int i =0 ;
+	public RideSharingSystem() {
+		
+	}
+	
+	public void addRider(int RiderId) {
+		arr[i] = RiderId;
+		i++;
+	}
+	
+	public void addDriver(int DriverId) {
+		arr[i] = DriverId;
+		i++;
+	}
+	
+	public int[] matchDriverWithRider() {
+		
+		return arr;
+	}
+	
+	public void cancelRider(int riderId) {
+		
+	}
+}
+
+public class Feb23 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		for(int i =0 ; i< 4 ; i++) {
+			Second f = new Second(i);
+	         f.show();
+		}
+         
+	  
+	}
+
+}

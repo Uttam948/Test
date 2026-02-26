@@ -1,0 +1,44 @@
+package practices1;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Map<Integer , List<String>> map = new HashMap<>();
+		
+		
+		
+		List<Integer> list = Arrays.asList(1,2,14,13,53,12,5,8,6,10);
+		
+		List<String> st = Arrays.asList("ram","shyam",null,""," ");
+		
+		map.put(0, new List<String>(Arrays.asList("sdfsd","sdfsdf")));
+		
+		System.out.println(st.size());
+		
+	long n = st.stream().count();
+	System.out.println(n);
+		
+	//	list.stream().filter(p->p%2==0).forEach(System.out::print);
+		
+		//the numbers starting with 1 using Stream functions
+		List<String> filter = list.stream().map(p->p+"").filter(p->p.startsWith("1")).collect(Collectors.toList());
+        //  System.out.println(filter);
+          
+        //duplicate elements in a given integers list in java using Stream functions
+          
+          Set<Integer> set = new HashSet();
+        //   list.stream().filter(n->!set.add(n)).forEach(System.out :: print);
+          
+	}
+
+}

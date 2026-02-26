@@ -1,0 +1,17 @@
+
+public class OtherZigZagPattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String st = "PAHNAPLSIIGYIR";
+		int n = 3;
+		
+		int i = 0 , j = 0 , v =  0 ;
+		
+		while(v < st.length()) {
+			
+		}
+
+	}
+
+}

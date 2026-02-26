@@ -1,0 +1,55 @@
+package NovermberCoding_2025;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class Feb15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        String str = "zzabccy";
+        
+        //a , b, b, a,d , ab, abb, abba, abbad, bb,bba,bbad,
+        //ba,bad, ad , 
+        int max =0 ;
+        for(int i =0 ;i<str.length() ; i++){
+        	
+        	for(int j = i ; j<str.length() ; j++) {
+        		
+        	//	System.out.println(str.substring(i, j+1));
+        		
+        		String st = str.substring(i, j+1);
+        		
+        		Map<Character , Integer> map = new HashMap<>();
+        		
+        		for(int k =0 ; k<st.length() ; k++) {
+        			
+        			if(map.containsKey(st.charAt(k))) {
+        				map.put(st.charAt(k), map.getOrDefault(st.charAt(k), 0)+1);
+        			}else {
+        				
+        				map.put(st.charAt(k), 1);
+        			}
+        	}
+        		
+        		System.out.println(map);
+        		int same = 1;
+        		Set<Integer> set = new HashSet<>();
+        		for(Map.Entry<Character, Integer> m : map.entrySet()) {
+        			
+        			set.add(m.getValue());
+        		}
+        		
+        		if(set.size() == 1 && max < st.length()) {
+        			max = st.length();
+        		}
+        	}
+        
+        }
+        
+        System.out.println(max);
+	}
+
+}

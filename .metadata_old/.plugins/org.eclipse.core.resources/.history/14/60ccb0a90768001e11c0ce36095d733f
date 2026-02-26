@@ -1,0 +1,30 @@
+package practices1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Listarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 List<int [] > list = new ArrayList<>();
+
+		int []arr = new int[2];
+		
+		
+		
+		
+		
+	
+			
+			arr[0] = 1; 
+			arr[1] = 2;
+			
+			list.add(arr[0] , arr[1]);
+	
+		
+		System.out.println(list);
+	}
+
+}

@@ -1,0 +1,15 @@
+package practices1;
+
+public class RecursionOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void Permutations(int i , int arr[]) {
+		
+		if(i == S)
+	}
+
+}

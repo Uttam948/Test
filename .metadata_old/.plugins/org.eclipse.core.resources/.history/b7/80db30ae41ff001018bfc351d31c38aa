@@ -1,0 +1,38 @@
+package NovermberCoding_2025;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class Feb01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "javafullstack";
+		
+		Map<Character , Long> map = new HashMap<>();
+		
+		map = str.chars().mapToObj( c -> (char) c).collect(Collectors.groupingBy(Function.identity() , Collectors.counting()));
+		
+		Long max = 0L;
+		Long secmax = 0L;
+		
+		for(Entry<Character, Long> i : map.entrySet()) {
+			
+			if(i.getValue() > secmax) {
+				
+				secmax = max;
+				max = i.getValue();
+			} else if(i.getValue() > secmax && i.getValue() < max) {
+				
+				secmax = i.getValue();
+			}
+		}
+		System.out.println(map);
+
+	}
+
+}

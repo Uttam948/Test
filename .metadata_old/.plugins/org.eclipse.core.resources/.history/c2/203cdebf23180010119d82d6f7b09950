@@ -1,0 +1,28 @@
+package leetCode;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+public class LongestPelindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	//	String st = "asddbbabb";  //cbac aabaa // aba
+//	String st = "babad";
+	//	"aacabdkacaa"
+	//	String st ="bacaa";
+	//	String st = "jhddc";
+	//	String st = "aabaa";
+	//	String st = "acaa";
+	//	String st = "bacabab";
+		
+		String st = "aacabdkacaa";
+		
+
+	}
+
+}

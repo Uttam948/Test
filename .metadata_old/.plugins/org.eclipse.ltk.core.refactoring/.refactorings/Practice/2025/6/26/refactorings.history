@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;RecurrsionProblems.PrintPermutation&apos; to &apos;LeedCodeCodingQuestion&apos;&#x0D;&#x0A;- Original project: &apos;Practice&apos;&#x0D;&#x0A;- Original element: &apos;RecurrsionProblems.PrintPermutation&apos;&#x0D;&#x0A;- Renamed element: &apos;RecurrsionProblems.LeedCodeCodingQuestion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PrintPermutation&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;RecurrsionProblems{PrintPermutation.java[PrintPermutation" matchStrategy="1" name="LeedCodeCodingQuestion" qualified="false" references="true" similarDeclarations="false" stamp="1750571870328" textual="false" version="1.0"/>
+</session>

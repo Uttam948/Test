@@ -1,0 +1,22 @@
+
+public class OtherZigZagPattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String st = "PAHNAPLSIIGYIR";
+		int n = 3;
+		char ch[][] = new char[n][st.length()/2];
+		
+		int i = 0 , j = 0 , v =  0 ;
+		
+		while(v < st.length()) {
+			
+			while(i < n) {
+				
+				System.out.println(st.charAt(v));
+			}
+		}
+
+	}
+
+}

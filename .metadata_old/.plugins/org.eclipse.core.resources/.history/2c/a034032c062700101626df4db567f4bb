@@ -1,0 +1,72 @@
+package leetCode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class CombinationSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[] = {2,3,5};
+	//	int arr[] = {2,3,6,7};
+		int target = 8;
+		
+		
+		
+		List<List<Integer>> list =  new ArrayList<>();
+		
+		
+		for(int i =0 ;i<arr.length ; i++) {
+			List<Integer> lit =  new ArrayList<>();
+			int n = target - arr[i];
+			if(target == arr[i] ) {
+				lit.add(arr[i]);
+			}
+			for(int j = 0;j<arr.length ; j++) {
+				List<Integer> lisst =  new ArrayList<>();
+				if(n%arr[j] == 0 && target != arr[j]) {
+					lisst.add(arr[i]);
+					int rep = n / arr[j];
+					
+					while(rep > 0) {
+						lisst.add(arr[j]);
+						rep--;
+					}
+				}
+				Collections.sort(lisst);
+				if(!lisst.isEmpty() && !list.contains(lisst)) {
+				list.add(lisst);
+				}
+				
+			}
+			if(!lit.isEmpty() && !list.contains(lit)) {
+				list.add(lit);
+				}			
+		}
+		
+			System.out.println(list);		
+		
+	}
+	
+	public static List<List<Integer>> Combination(int arr[], int target ){
+		
+		List<List<Integer>> list = new ArrayList<>();
+		
+		
+		
+		return list; 
+ 	}
+
+	public static List<Integer> recurr(int arr[], int n ){
+		// {2,3,5}
+		List<Integer> list = new ArrayList<>();
+		
+		if(n == arr.length) {
+			return list;
+		}
+		
+		return list;
+	}
+}

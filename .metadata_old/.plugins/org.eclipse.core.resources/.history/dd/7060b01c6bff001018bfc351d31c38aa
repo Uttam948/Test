@@ -1,0 +1,14 @@
+package NovermberCoding_2025;
+
+public class Feb001 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = "./32abdbgs23./.&8s%";
+		String s = "";
+		
+	   
+	}
+
+}

@@ -1,0 +1,38 @@
+package leetCode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class CombinationSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[] = {2,3,5};
+	//	int arr[] = {2,3,6,7};
+		int target = 8;
+			
+		
+	}
+	
+	public static List<List<Integer>> Combination(int arr[], int target ){
+		
+		List<List<Integer>> list = new ArrayList<>();
+		
+		
+		
+		return list; 
+ 	}
+
+	public static List<Integer> recurr(int arr[], int n ){
+		// {2,3,5}
+		List<Integer> list = new ArrayList<>();
+		
+		if(n == arr.length) {
+			return list;
+		}
+		
+		return list;
+	}
+}

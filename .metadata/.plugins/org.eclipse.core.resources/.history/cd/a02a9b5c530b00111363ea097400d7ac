@@ -1,0 +1,18 @@
+package NovermberCoding_2025;
+
+public class Feb16 {
+
+	
+	public static Boolean check(String str) {
+		
+		
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+           
+		
+	}
+
+}

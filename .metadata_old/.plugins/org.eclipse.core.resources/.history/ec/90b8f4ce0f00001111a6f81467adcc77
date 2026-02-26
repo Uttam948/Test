@@ -1,0 +1,21 @@
+package NovermberCoding_2025;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Feb23 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  
+		 String str = "javafullStack";
+		 
+		 HashSet<Character> set = new HashSet<>();
+		 
+		List<Character> list =  str.chars().mapToObj(c -> (char) c).filter(n -> !set.add(n)).collect(Collectors.toList());
+	
+		System.out.println(list.get(1));
+	}
+
+}

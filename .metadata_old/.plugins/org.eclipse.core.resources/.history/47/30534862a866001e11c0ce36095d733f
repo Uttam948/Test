@@ -1,0 +1,30 @@
+package practices1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class FrequencyElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String st = "aaabbccbb";
+		int count = 1;
+		Map<Character , Integer> map = new HashMap<>();
+		
+		int j =1 ;
+		
+		int visited = 0;
+		
+		
+		for(int  i = 0 ; i<st.length()-1 ; i++) {
+			
+			
+		}
+		
+		System.out.println(map);
+
+	}
+
+
+}

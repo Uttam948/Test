@@ -1,0 +1,40 @@
+
+public class OtherZigZagPattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String st = "PAYPALISHIRING";
+		int n = 3;
+		char ch[][] = new char[n][st.length()-1];
+		
+		int i = 0 , j = 0 , v =  0 ;
+		
+		while(v <= st.length()) {
+		
+			while(i < n) {
+				ch[i][0] = st.charAt(v);
+				System.out.print(st.charAt(v));
+				i++;
+				v++;
+			}
+			i--;
+		
+			System.out.println();
+		//	System.out.println(i);
+			while(i > 1) {
+				i--;
+				j++;       
+			//	System.out.println(i);
+				System.out.print(st.charAt(v));
+				ch[i][j] = st.charAt(v);
+				
+			//	System.out.println(i);
+				v++;
+			}
+			i--;
+			System.out.println();
+		}
+
+	}
+
+}
